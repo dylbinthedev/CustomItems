@@ -1,0 +1,11 @@
+name: CustomItems
+version: 1.0.1
+main: com.spindel.customitems.customitems.CustomItems
+api-version: 1.16
+authors: [ spindel10 ]
+description: Funny items haha
+website: https://dylbinthedev.github.io/
+commands:
+  givemagicstick:
+    description: Gives our 0tx stick to the player.
+    usage: /givemagicstick
