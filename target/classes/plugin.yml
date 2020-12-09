@@ -8,7 +8,7 @@ website: https://dylbinthedev.github.io/
 commands:
   givemagicstick:
     description: Gives our 0tx stick to the player.
-    usage: /txstick
+    usage: /givemagicstick
   givethorhammer:
     description: Gives thor's hammer to the player.
-    usage: /txthor
+    usage: /givethorhammer
