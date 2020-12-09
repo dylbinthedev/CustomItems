@@ -6,7 +6,9 @@ public final class CustomItems extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getCommand("givemagicstick").setExecutor(new Commands());
+        ItemList.init();
+        getCommand("txstick").setExecutor(new Commands());
+        getCommand("txthor").setExecutor(new Commands());
     }
 
     @Override

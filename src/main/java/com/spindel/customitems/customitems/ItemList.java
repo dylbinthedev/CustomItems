@@ -16,6 +16,7 @@ public final class ItemList {
     private ItemList() {}
 
     public static final ItemStack MAGIC_STICK;
+    public static final ItemStack THOR_HAMMER;
     static {
         MAGIC_STICK = makeItem(
                 Material.STICK, 
@@ -30,6 +31,12 @@ public final class ItemList {
                 Enchantment.DAMAGE_UNDEAD,
                 Enchantment.DAMAGE_ARTHROPODS,
                 Enchantment.FIRE_ASPECT
+        );
+        THOR_HAMMER = makeItem(
+                Material.IRON_AXE,
+                "&3Thor's Hammer",
+                Arrays.asList("&cOden's Wrath"),
+                Enchantment.DURABILITY
         );
     }
 

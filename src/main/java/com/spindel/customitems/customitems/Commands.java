@@ -17,7 +17,14 @@ public final class Commands implements CommandExecutor {
         }
         
         Player player = (Player) sender;
-        player.getInventory().addItem(ItemList.MAGIC_STICK);
-        return true;
+        if (cmd.getName().equalsIgnoreCase("txstick")) {
+            player.getInventory().addItem(ItemList.MAGIC_STICK);
+        }
+            if (cmd.getName().equalsIgnoreCase("txthor")) {
+                player.getInventory().addItem(ItemList.THOR_HAMMER);
+            }
+
+            return true;
+
+        }
     }
-}
