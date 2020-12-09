@@ -14,10 +14,14 @@ public class Commands implements CommandExecutor {
             return true;
         }
         Player player = (Player) sender;
-        if (cmd.getName().equalsIgnoreCase("givemagicstick")) {
+        if (cmd.getName().equalsIgnoreCase("txstick")) {
             player.getInventory().addItem(ItemList.magicstick);
         }
+            if (cmd.getName().equalsIgnoreCase("txthor")) {
+                player.getInventory().addItem(ItemList.thorhammer);
+            }
 
-        return true;
+            return true;
+
+        }
     }
-}

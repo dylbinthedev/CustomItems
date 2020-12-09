@@ -12,6 +12,7 @@ import java.util.List;
 public class ItemList {
 
     public static ItemStack magicstick;
+    public static ItemStack thorhammer;
 
     public static void init() {
         createmagicstick();
@@ -33,5 +34,18 @@ public class ItemList {
         meta.addEnchant(Enchantment.FIRE_ASPECT, 100, true);
         item.setItemMeta(meta);
         magicstick = item;
+    }
+
+    private static void createthorhammer() {
+        ItemStack item2 = new ItemStack(Material.IRON_AXE, 1);
+        ItemMeta meta2 = item2.getItemMeta();
+        meta2.setDisplayName("§3Thor's Hammer");
+        List<String> lore = new ArrayList<>();
+        lore.add("§cOden's Wrath");
+        meta2.setLore(lore);
+        meta2.addEnchant(Enchantment.DURABILITY, 100, true);
+        meta2.addEnchant(Enchantment.MENDING, 1, true);
+        item2.setItemMeta(meta2);
+        thorhammer = item2;
     }
 }
