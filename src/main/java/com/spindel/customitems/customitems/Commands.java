@@ -17,10 +17,10 @@ public final class Commands implements CommandExecutor {
         }
         
         Player player = (Player) sender;
-        if (cmd.getName().equalsIgnoreCase("txstick")) {
+        if (cmd.getName().equalsIgnoreCase("givemagicstick")) {
             player.getInventory().addItem(ItemList.MAGIC_STICK);
         }
-            if (cmd.getName().equalsIgnoreCase("txthor")) {
+            if (cmd.getName().equalsIgnoreCase("givethorhammer")) {
                 player.getInventory().addItem(ItemList.THOR_HAMMER);
             }
 

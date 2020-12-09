@@ -55,4 +55,7 @@ public final class ItemList {
     private static String colorize(String input) {
         return ChatColor.translateAlternateColorCodes('&', input);
     }
+
+    public static void init() {
+    }
 }
